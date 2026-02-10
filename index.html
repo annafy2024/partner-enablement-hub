@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B Partner Enablement - EMEA | Shopify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --shopify-green: #008060;
+            --shopify-green-dark: #004c3f;
+            --shopify-green-light: #e3f1ed;
+            --shopify-black: #000000;
+            --shopify-gray-100: #f6f6f7;
+            --shopify-gray-200: #e3e3e3;
+            --shopify-gray-300: #b5b5b5;
+            --shopify-gray-400: #8c8c8c;
+            --shopify-gray-500: #5c5f62;
+            --shopify-white: #ffffff;
+            --shopify-blue: #2c6ecb;
+            --shopify-blue-light: #e8f1fb;
+            --shopify-orange: #f49342;
+            --shopify-orange-light: #fef3e8;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.12);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--shopify-white);
+            color: var(--shopify-black);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+            margin-bottom: 4rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--shopify-black);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--shopify-gray-500);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* CTA Banner */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--shopify-green), var(--shopify-green-dark));
+            border-radius: 12px;
+            padding: 1.5rem 3rem;
+            margin-bottom: 4rem;
+            text-align: center;
+            color: var(--shopify-white);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .cta-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+
+        .cta-text {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--shopify-white);
+            color: var(--shopify-green);
+            padding: 1rem 2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            box-shadow: var(--shadow-md);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Section Headers */
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        .section-header {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--shopify-black);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-description {
+            font-size: 1.125rem;
+            color: var(--shopify-gray-500);
+        }
+
+        /* Resource Cards */
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .resource-card {
+            background: var(--shopify-white);
+            border: 1px solid var(--shopify-gray-200);
+            border-radius: 12px;
+            padding: 2rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s ease;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .resource-card.learning-path {
+            border: 2px solid var(--shopify-green-light);
+            background: linear-gradient(to bottom, var(--shopify-white), #f0f9f7);
+        }
+
+        .resource-card:hover {
+            border-color: var(--shopify-green);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-4px);
+        }
+
+        /* Learning Paths Box */
+        .learning-paths-box {
+            background: var(--shopify-white);
+            border: 2px solid var(--shopify-green-light);
+            background: linear-gradient(to bottom, var(--shopify-white), #f0f9f7);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .learning-paths-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .learning-paths-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--shopify-green-light);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .learning-paths-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--shopify-black);
+        }
+
+        .learning-paths-description {
+            color: var(--shopify-gray-500);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .learning-paths-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .learning-path-button {
+            flex: 1;
+            min-width: 180px;
+            background: var(--shopify-white);
+            border: 2px solid var(--shopify-green);
+            border-radius: 8px;
+            padding: 1rem;
+            text-decoration: none;
+            color: var(--shopify-black);
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+            position: relative;
+        }
+
+        .learning-path-button:hover {
+            background: var(--shopify-green-light);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .learning-path-button-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--shopify-black);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .learning-path-button-subtitle {
+            font-size: 0.8125rem;
+            color: var(--shopify-gray-500);
+        }
+
+        .learning-path-arrow {
+            color: var(--shopify-green);
+            font-size: 1.25rem;
+            margin-left: 0.5rem;
+        }
+
+        .resource-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--shopify-green-light);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .resource-type {
+            font-size: 0.75rem;
+            color: var(--shopify-green);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .resource-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--shopify-black);
+        }
+
+        .resource-description {
+            color: var(--shopify-gray-500);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .resource-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 1rem;
+            border-top: 1px solid var(--shopify-gray-200);
+        }
+
+        .resource-duration {
+            font-size: 0.875rem;
+            color: var(--shopify-gray-400);
+        }
+
+        .resource-arrow {
+            color: var(--shopify-green);
+            font-size: 1.25rem;
+        }
+
+        /* Team Section */
+        .team-lead-banner {
+            background: var(--shopify-gray-100);
+            border: 2px solid var(--shopify-gray-200);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .team-lead-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--shopify-green);
+            margin-bottom: 1rem;
+        }
+
+        .team-lead-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--shopify-gray-400);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .team-lead-name {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--shopify-black);
+            margin-bottom: 0.25rem;
+        }
+
+        .team-lead-role {
+            color: var(--shopify-gray-500);
+            font-size: 1rem;
+        }
+
+        .ae-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .ae-card {
+            background: var(--shopify-white);
+            border: 1px solid var(--shopify-gray-200);
+            border-radius: 12px;
+            padding: 1.75rem;
+            transition: all 0.2s ease;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .ae-card:hover {
+            border-color: var(--shopify-green);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-4px);
+        }
+
+        .ae-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .ae-avatar {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--shopify-gray-200);
+        }
+
+        .ae-info {
+            flex: 1;
+        }
+
+        .ae-name {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--shopify-black);
+            margin-bottom: 0.25rem;
+        }
+
+        .ae-title {
+            font-size: 0.875rem;
+            color: var(--shopify-gray-400);
+        }
+
+        .ae-region {
+            background: var(--shopify-gray-100);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .ae-region:last-child {
+            margin-bottom: 0;
+        }
+
+        .ae-region-label {
+            font-size: 0.75rem;
+            color: var(--shopify-gray-400);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.35rem;
+            font-weight: 600;
+        }
+
+        .ae-region-text {
+            color: var(--shopify-black);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* ICP Section */
+        .icp-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .icp-card {
+            background: var(--shopify-white);
+            border: 1px solid var(--shopify-gray-200);
+            border-radius: 12px;
+            padding: 1.75rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .icp-card-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .icp-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--shopify-green-light);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+
+        .icp-title {
+            font-weight: 600;
+            font-size: 1.125rem;
+            color: var(--shopify-black);
+        }
+
+        .icp-items {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .icp-items li {
+            padding: 0.5rem 0;
+            color: var(--shopify-gray-500);
+            font-size: 0.95rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .icp-items li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--shopify-green);
+            font-weight: 700;
+        }
+
+        /* Qualification Questions Note */
+        .qualification-note {
+            background: var(--shopify-blue-light);
+            border-left: 4px solid var(--shopify-blue);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .qualification-note-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .qualification-note-icon {
+            font-size: 1.5rem;
+        }
+
+        .qualification-note-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--shopify-black);
+        }
+
+        .qualification-note-text {
+            color: var(--shopify-gray-500);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .qualification-questions {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .qualification-questions li {
+            padding: 0.5rem 0;
+            color: var(--shopify-gray-500);
+            font-size: 0.95rem;
+            padding-left: 1.5rem;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .qualification-questions li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--shopify-blue);
+            font-weight: 700;
+        }
+
+        /* VPF Section */
+        .vpf-banner {
+            background: var(--shopify-white);
+            border: 1px solid var(--shopify-gray-200);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .vpf-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .vpf-icon {
+            font-size: 1.75rem;
+        }
+
+        .vpf-title {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--shopify-black);
+        }
+
+        .vpf-description {
+            color: var(--shopify-gray-500);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .vpf-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .vpf-card {
+            background: var(--shopify-gray-100);
+            border-radius: 10px;
+            padding: 1.5rem;
+        }
+
+        .vpf-card.charged {
+            background: var(--shopify-green-light);
+            border: 2px solid var(--shopify-green);
+        }
+
+        .vpf-card.not-charged {
+            background: var(--shopify-gray-100);
+            border: 2px solid var(--shopify-gray-300);
+        }
+
+        .vpf-card-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .vpf-badge {
+            padding: 0.35rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .vpf-badge.charged {
+            background: var(--shopify-green);
+            color: var(--shopify-white);
+        }
+
+        .vpf-badge.not-charged {
+            background: var(--shopify-gray-400);
+            color: var(--shopify-white);
+        }
+
+        .vpf-card-title {
+            font-weight: 600;
+            font-size: 1.125rem;
+            color: var(--shopify-black);
+            margin-bottom: 0.75rem;
+        }
+
+        .vpf-card-items {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .vpf-card-items li {
+            padding: 0.5rem 0;
+            color: var(--shopify-gray-500);
+            font-size: 0.95rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .vpf-card.charged .vpf-card-items li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--shopify-green);
+            font-weight: 700;
+        }
+
+        .vpf-card.not-charged .vpf-card-items li::before {
+            content: '×';
+            position: absolute;
+            left: 0;
+            color: var(--shopify-gray-400);
+            font-weight: 700;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--shopify-gray-100);
+            border-top: 1px solid var(--shopify-gray-200);
+            margin-top: 6rem;
+            padding: 3rem 0;
+        }
+
+        .footer-content {
+            text-align: center;
+            color: var(--shopify-gray-400);
+            font-size: 0.875rem;
+        }
+
+        .footer-link {
+            color: var(--shopify-green);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--shopify-green-dark);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .cta-title {
+                font-size: 1.5rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .resources-grid,
+            .ae-grid,
+            .icp-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Shopify B2B Partner Enablement</h1>
+            <p class="subtitle">
+                Everything you need to deliver exceptional B2B experiences on Shopify
+            </p>
+        </div>
+
+        <!-- CTA Banner -->
+        <div class="cta-banner">
+            <div class="cta-title">Ready to Refer a B2B Opportunity?</div>
+            <p class="cta-text">
+                Log in to your Partner Portal to submit qualified B2B leads and track your referrals
+            </p>
+            <a href="https://partners.shopify.com/organizations" class="cta-button" target="_blank">
+                <span>Go to Partner Portal</span>
+                <span>→</span>
+            </a>
+        </div>
+
+        <!-- Learning Resources Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Learning Resources</h2>
+                <p class="section-description">Build your B2B expertise with these essential courses</p>
+            </div>
+
+            <!-- Learning Paths Box -->
+            <div class="learning-paths-box" style="margin-bottom: 1.5rem;">
+                <div class="learning-paths-header">
+                    <div class="learning-paths-icon">📚</div>
+                    <div class="learning-paths-title">B2B Learning Paths</div>
+                </div>
+                <p class="learning-paths-description">
+                    Complete structured learning paths to master Shopify B2B—from discovery and solution design to launching and customizing B2B storefronts
+                </p>
+                <div class="learning-paths-buttons">
+                    <a href="https://www.shopifyacademy.com/path/shopify-b2b-foundations-discovery-and-solution-design" class="learning-path-button" target="_blank">
+                        <span class="learning-path-button-title">
+                            Discovery & Qualification
+                            <span class="learning-path-arrow">→</span>
+                        </span>
+                        <span class="learning-path-button-subtitle">Master B2B foundations and solution design</span>
+                    </a>
+                    <a href="https://www.shopifyacademy.com/path/b2b-on-shopify-launch-and-customization" class="learning-path-button" target="_blank">
+                        <span class="learning-path-button-title">
+                            Launch & Customization
+                            <span class="learning-path-arrow">→</span>
+                        </span>
+                        <span class="learning-path-button-subtitle">Advanced techniques for B2B storefronts</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="resources-grid">
+                <a href="https://www.shopifyacademy.com/video-how-to-create-a-development-store/2378543" class="resource-card" target="_blank">
+                    <div class="resource-icon">🛠️</div>
+                    <div class="resource-type">Video Tutorial</div>
+                    <div class="resource-title">Creating Development Stores</div>
+                    <p class="resource-description">
+                        Learn how to set up development stores for building and testing B2B implementations
+                    </p>
+                    <div class="resource-footer">
+                        <span class="resource-duration">Video Course</span>
+                        <span class="resource-arrow">→</span>
+                    </div>
+                </a>
+
+                <a href="https://app.getreprise.com/launch/ZXB7zey/" class="resource-card" target="_blank">
+                    <div class="resource-icon">🎮</div>
+                    <div class="resource-type">Interactive Demo</div>
+                    <div class="resource-title">Self-Paced B2B Demo</div>
+                    <p class="resource-description">
+                        Explore Shopify B2B features hands-on with an interactive self-guided demo environment
+                    </p>
+                    <div class="resource-footer">
+                        <span class="resource-duration">Interactive Demo</span>
+                        <span class="resource-arrow">→</span>
+                    </div>
+                </a>
+
+                <a href="https://apps.shopify.com/stories/guide-selling-b2b" class="resource-card" target="_blank">
+                    <div class="resource-icon">🔌</div>
+                    <div class="resource-type">App Guide</div>
+                    <div class="resource-title">Popular B2B Apps</div>
+                    <p class="resource-description">
+                        Discover essential apps for B2B workflows—from buyer management to ERP integration and bulk ordering
+                    </p>
+                    <div class="resource-footer">
+                        <span class="resource-duration">App Directory</span>
+                        <span class="resource-arrow">→</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Your B2B Sales Team</h2>
+                <p class="section-description">Connect with the right account executive for your region</p>
+            </div>
+
+            <div class="team-lead-banner">
+                <img src="assets/louise-garrigos.png" alt="Louise Garrigos" class="team-lead-avatar">
+                <div class="team-lead-label">Team Lead</div>
+                <div class="team-lead-name">Louise Garrigos</div>
+                <div class="team-lead-role">B2B EMEA Leadership</div>
+            </div>
+
+            <div class="ae-grid">
+                <div class="ae-card">
+                    <div class="ae-header">
+                        <img src="assets/evan-walsh.png" alt="Evan Walsh" class="ae-avatar">
+                        <div class="ae-info">
+                            <div class="ae-name">Evan Walsh</div>
+                            <div class="ae-title">Senior Account Executive</div>
+                        </div>
+                    </div>
+                    <div class="ae-region">
+                        <div class="ae-region-label">Territory</div>
+                        <div class="ae-region-text">Northern Europe + UKI</div>
+                    </div>
+                    <div class="ae-region">
+                        <div class="ae-region-label">Specialization</div>
+                        <div class="ae-region-text">Net New Business</div>
+                    </div>
+                </div>
+
+                <div class="ae-card">
+                    <div class="ae-header">
+                        <img src="assets/giovanni-dauria.png" alt="Giovanni D'Auria" class="ae-avatar">
+                        <div class="ae-info">
+                            <div class="ae-name">Giovanni D'Auria</div>
+                            <div class="ae-title">Lead Account Executive</div>
+                        </div>
+                    </div>
+                    <div class="ae-region">
+                        <div class="ae-region-label">Territory</div>
+                        <div class="ae-region-text">Iberia + Italy</div>
+                    </div>
+                    <div class="ae-region">
+                        <div class="ae-region-label">Specialization</div>
+                        <div class="ae-region-text">Net New Business</div>
+                    </div>
+                </div>
+
+                <div class="ae-card">
+                    <div class="ae-header">
+                        <img src="assets/jonathan-primard.png" alt="Jonathan Primard" class="ae-avatar">
+                        <div class="ae-info">
+                            <div class="ae-name">Jonathan Primard</div>
+                            <div class="ae-title">Lead Account Executive</div>
+                        </div>
+                    </div>
+                    <div class="ae-region">
+                        <div class="ae-region-label">Territory</div>
+                        <div class="ae-region-text">France</div>
+                    </div>
+                    <div class="ae-region">
+                        <div class="ae-region-label">Specialization</div>
+                        <div class="ae-region-text">Net New Business</div>
+                    </div>
+                </div>
+
+                <div class="ae-card">
+                    <div class="ae-header">
+                        <img src="assets/ozlem-dsouza.png" alt="Özlem DSouza" class="ae-avatar">
+                        <div class="ae-info">
+                            <div class="ae-name">Özlem DSouza</div>
+                            <div class="ae-title">Senior Account Executive</div>
+                        </div>
+                    </div>
+                    <div class="ae-region">
+                        <div class="ae-region-label">Territory</div>
+                        <div class="ae-region-text">DACH + Eastern Europe</div>
+                    </div>
+                    <div class="ae-region">
+                        <div class="ae-region-label">Specialization</div>
+                        <div class="ae-region-text">Net New Business</div>
+                    </div>
+                </div>
+
+                <div class="ae-card">
+                    <div class="ae-header">
+                        <img src="assets/luis-romero.png" alt="Luis Romero" class="ae-avatar">
+                        <div class="ae-info">
+                            <div class="ae-name">Luis Romero</div>
+                            <div class="ae-title">Senior Account Executive</div>
+                        </div>
+                    </div>
+                    <div class="ae-region">
+                        <div class="ae-region-label">Territory</div>
+                        <div class="ae-region-text">All EMEA</div>
+                    </div>
+                    <div class="ae-region">
+                        <div class="ae-region-label">Specialization</div>
+                        <div class="ae-region-text">B2B Upsell - Existing Merchants</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Qualification Criteria Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Lead Qualification Criteria</h2>
+                <p class="section-description">These are the characteristics of ideal B2B opportunities we're looking to work on together</p>
+            </div>
+
+            <div class="icp-grid">
+                <div class="icp-card">
+                    <div class="icp-card-header">
+                        <div class="icp-icon">🏢</div>
+                        <div class="icp-title">Business Profile</div>
+                    </div>
+                    <ul class="icp-items">
+                        <li>Has both D2C and B2B channels</li>
+                        <li>€12M+ annual GMV (aim higher)</li>
+                        <li>Already has a B2B online portal</li>
+                    </ul>
+                </div>
+
+                <div class="icp-card">
+                    <div class="icp-card-header">
+                        <div class="icp-icon">📡</div>
+                        <div class="icp-title">Signals</div>
+                    </div>
+                    <ul class="icp-items">
+                        <li>Heavy use of online payments (D2C + B2B)</li>
+                        <li>ERP is key player (we have a connector)</li>
+                        <li>Minimal additional integrations required</li>
+                        <li>No heavy custom requirements</li>
+                        <li>No or low EDI</li>
+                        <li>No punchout</li>
+                    </ul>
+                </div>
+
+                <div class="icp-card">
+                    <div class="icp-card-header">
+                        <div class="icp-icon">🚀</div>
+                        <div class="icp-title">Transformation Culture</div>
+                    </div>
+                    <ul class="icp-items">
+                        <li>Digital transformation readiness</li>
+                        <li>Available resources internally</li>
+                        <li>Decision maker engaged</li>
+                        <li>Clear launch timeline (6-9 months)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="qualification-note">
+                <div class="qualification-note-header">
+                    <span class="qualification-note-icon">💡</span>
+                    <span class="qualification-note-title">Help Us Qualify Faster</span>
+                </div>
+                <p class="qualification-note-text">
+                    To streamline the qualification process, please provide these key data points when submitting opportunities:
+                </p>
+                <ul class="qualification-questions">
+                    <li>Online GMV over the last 12 months / last calendar year's revenue — broken down by each line of business (B2B, D2C, and/or Retail separately, not combined)</li>
+                    <li>What proportion of online revenue leverages credit card payments (direct CC payment, pay on net terms with CC, charge vaulted card, etc.) as a percentage of overall revenue</li>
+                    <li>Target replatforming timeline — by when do they ideally want to be live on Shopify</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ICP Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Ideal Customer Profile</h2>
+                <p class="section-description">Target merchants that fit these characteristics</p>
+            </div>
+
+            <div class="icp-grid">
+                <div class="icp-card">
+                    <div class="icp-card-header">
+                        <div class="icp-icon">🏭</div>
+                        <div class="icp-title">Most Successful Verticals</div>
+                    </div>
+                    <ul class="icp-items">
+                        <li>Consumer Packaged Goods (CPG)</li>
+                        <li>Food & Beverage</li>
+                        <li>Beauty & Personal Care</li>
+                        <li>Industrial Supplies</li>
+                        <li>Electronics & Gadgets</li>
+                        <li>Home & Garden / Lifestyle</li>
+                        <li>Sports Equipment</li>
+                    </ul>
+                    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--shopify-gray-200); font-size: 0.85rem; color: var(--shopify-gray-400); font-style: italic;">
+                        Note: While we support manufacturing, we currently don't have strong product-market fit for larger manufacturers
+                    </div>
+                </div>
+
+                <div class="icp-card">
+                    <div class="icp-card-header">
+                        <div class="icp-icon">📦</div>
+                        <div class="icp-title">Business Profile</div>
+                    </div>
+                    <ul class="icp-items">
+                        <li>Hybrid B2B + D2C</li>
+                        <li>Pure-play B2B Wholesale</li>
+                        <li>€1M+ annual revenue</li>
+                        <li>Growing customer base</li>
+                        <li>Digital transformation focus</li>
+                        <li>Focus is on ONLINE transactions</li>
+                    </ul>
+                </div>
+
+                <div class="icp-card">
+                    <div class="icp-card-header">
+                        <div class="icp-icon">⚙️</div>
+                        <div class="icp-title">Use Cases</div>
+                    </div>
+                    <ul class="icp-items">
+                        <li>Customer-specific pricing for B2B customers (mastered in Shopify or synced from ERP)</li>
+                        <li>Add customers to companies and company locations</li>
+                        <li>Empower self-service purchasing via easy reordering (or returns) from logged-in customer account portal</li>
+                        <li>Different storefront UX for B2C and B2B buyers on 1 storefront / theme</li>
+                        <li>Credit buying limits</li>
+                        <li>Create orders on behalf of buyers via the backend (as a sales rep)</li>
+                        <li>App-powered use cases: quoting, wishlists, create orders via CSV</li>
+                        <li style="font-style: italic; color: var(--shopify-gray-400);">And many more...</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- VPF Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Understanding Variable Platform Fees (VPF)</h2>
+                <p class="section-description">Know which B2B orders trigger VPF charges</p>
+            </div>
+
+            <div class="vpf-banner">
+                <div class="vpf-header">
+                    <span class="vpf-icon">📊</span>
+                    <span class="vpf-title">Variable Platform Fee (VPF) Logic</span>
+                </div>
+                <p class="vpf-description">
+                    VPF is charged when payment goes through Shopify's system or when Shopify facilitates the order. Understanding which orders trigger VPF helps partners set accurate expectations.
+                </p>
+
+                <div class="vpf-grid">
+                    <div class="vpf-card charged">
+                        <div class="vpf-card-header">
+                            <span class="vpf-badge charged">VPF Charged</span>
+                        </div>
+                        <div class="vpf-card-title">Orders That Trigger VPF</div>
+                        <ul class="vpf-card-items">
+                            <li>Credit Card payments (Shopify Payments)</li>
+                            <li>ACH bank transfers</li>
+                            <li>Admin-created orders with payment</li>
+                            <li>POS transactions</li>
+                            <li>Shopify-facilitated offline payments (check, wire transfer)</li>
+                        </ul>
+                    </div>
+
+                    <div class="vpf-card not-charged">
+                        <div class="vpf-card-header">
+                            <span class="vpf-badge not-charged">No VPF</span>
+                        </div>
+                        <div class="vpf-card-title">Orders That Don't Trigger VPF</div>
+                        <ul class="vpf-card-items">
+                            <li>Imported orders from external systems</li>
+                            <li>Offline payments for imported orders</li>
+                            <li>Orders created entirely outside Shopify</li>
+                            <li>Draft orders never completed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>
+                    Built for Shopify Partners by Anna Feichtner • 
+                    <a href="https://github.com/annafy2024" class="footer-link" target="_blank">GitHub</a>
+                </p>
+                <p style="margin-top: 0.75rem;">Last Updated: February 2026</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
