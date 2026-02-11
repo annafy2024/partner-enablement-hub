@@ -775,6 +775,31 @@
             position: relative;
         }
 
+        /* Key Point Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 4px 12px rgba(0, 128, 96, 0.15);
+            }
+            50% {
+                box-shadow: 0 6px 20px rgba(0, 128, 96, 0.25);
+            }
+        }
+
+        .key-point-box {
+            animation: fadeInUp 0.6s ease-out, pulse 3s ease-in-out infinite;
+        }
+
         .template-header {
             display: flex;
             align-items: center;
@@ -1566,9 +1591,10 @@ Best,
                         </div>
                     </div>
 
-                    <div style="margin-top: 0; padding: 1rem 1.5rem; background: var(--shopify-gray-100); border-radius: 8px;">
-                        <p style="font-size: 0.875rem; color: var(--shopify-gray-500); line-height: 1.6; margin: 0;">
-                            <strong>💡 Key Point:</strong> The threshold is typically around €10-12M in annual GMV processed through Shopify. Lower-volume merchants or those with mostly offline payment terms pay the simple base fee. Higher-volume merchants benefit from the VPF model.
+                    <div class="key-point-box" style="margin-top: 0; padding: 1.5rem 2rem; background: linear-gradient(135deg, var(--shopify-green-light), var(--shopify-blue-light)); border: 2px solid var(--shopify-green); border-radius: 12px;">
+                        <p style="font-size: 1rem; color: var(--shopify-black); line-height: 1.7; margin: 0; font-weight: 500;">
+                            <span style="font-size: 1.5rem; margin-right: 0.5rem;">💡</span>
+                            <strong style="font-size: 1.0625rem;">Key Point:</strong> The threshold is typically around <strong>€10-12M in annual GMV</strong> processed through Shopify. Lower-volume merchants or those with mostly offline payment terms pay the simple base fee. Higher-volume merchants benefit from the VPF model.
                         </p>
                     </div>
                 </div>
