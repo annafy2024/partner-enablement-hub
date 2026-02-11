@@ -1522,49 +1522,51 @@ Best,
                         <span>Pricing Examples</span>
                     </h4>
 
-                    <!-- Example 1: Base Fee Only -->
-                    <div style="background: var(--shopify-green-light); border-left: 3px solid var(--shopify-green); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem;">
-                        <div style="font-weight: 700; font-size: 1rem; color: var(--shopify-black); margin-bottom: 0.75rem;">
-                            Example 1: Base Subscription Only
-                        </div>
-                        <div style="color: var(--shopify-gray-500); font-size: 0.9375rem; line-height: 1.7;">
-                            <strong>Annual Revenue:</strong> €3M
-                        </div>
-                        <div style="color: var(--shopify-gray-500); font-size: 0.9375rem; line-height: 1.7; margin-top: 0.5rem;">
-                            Most orders use offline payment terms or are imported from external systems
-                        </div>
-                        <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--shopify-green);">
-                            <div style="font-weight: 700; color: var(--shopify-green); font-size: 1rem;">
-                                Monthly Cost: €2,250
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
+                        <!-- Example 1: Base Fee Only -->
+                        <div style="background: var(--shopify-green-light); border-left: 3px solid var(--shopify-green); border-radius: 8px; padding: 1.5rem;">
+                            <div style="font-weight: 700; font-size: 1rem; color: var(--shopify-black); margin-bottom: 0.75rem;">
+                                Example 1: Base Subscription Only
                             </div>
-                            <div style="font-size: 0.875rem; color: var(--shopify-gray-500); margin-top: 0.5rem;">
-                                ✓ VPF fees stay below the base subscription threshold
+                            <div style="color: var(--shopify-gray-500); font-size: 0.9375rem; line-height: 1.7;">
+                                <strong>Annual Revenue:</strong> €3M
+                            </div>
+                            <div style="color: var(--shopify-gray-500); font-size: 0.9375rem; line-height: 1.7; margin-top: 0.5rem;">
+                                Most orders use offline payment terms or are imported from external systems
+                            </div>
+                            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--shopify-green);">
+                                <div style="font-weight: 700; color: var(--shopify-green); font-size: 1rem;">
+                                    Monthly Cost: €2,250
+                                </div>
+                                <div style="font-size: 0.875rem; color: var(--shopify-gray-500); margin-top: 0.5rem;">
+                                    ✓ VPF fees stay below the base subscription threshold
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Example 2: Switched to VPF -->
+                        <div style="background: var(--shopify-blue-light); border-left: 3px solid var(--shopify-blue); border-radius: 8px; padding: 1.5rem;">
+                            <div style="font-weight: 700; font-size: 1rem; color: var(--shopify-black); margin-bottom: 0.75rem;">
+                                Example 2: Switched to Variable Platform Fee
+                            </div>
+                            <div style="color: var(--shopify-gray-500); font-size: 0.9375rem; line-height: 1.7;">
+                                <strong>Annual Revenue:</strong> €18M
+                            </div>
+                            <div style="color: var(--shopify-gray-500); font-size: 0.9375rem; line-height: 1.7; margin-top: 0.5rem;">
+                                Most orders are processed and paid through Shopify
+                            </div>
+                            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--shopify-blue);">
+                                <div style="font-weight: 700; color: var(--shopify-blue); font-size: 1rem;">
+                                    Monthly Cost: Variable rate based on GMV
+                                </div>
+                                <div style="font-size: 0.875rem; color: var(--shopify-gray-500); margin-top: 0.5rem;">
+                                    ⚡ When payment processing volume is high enough that VPF fees exceed €2,250/month, the merchant automatically switches to a variable rate pricing model
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Example 2: Switched to VPF -->
-                    <div style="background: var(--shopify-blue-light); border-left: 3px solid var(--shopify-blue); border-radius: 8px; padding: 1.5rem;">
-                        <div style="font-weight: 700; font-size: 1rem; color: var(--shopify-black); margin-bottom: 0.75rem;">
-                            Example 2: Switched to Variable Platform Fee
-                        </div>
-                        <div style="color: var(--shopify-gray-500); font-size: 0.9375rem; line-height: 1.7;">
-                            <strong>Annual Revenue:</strong> €18M
-                        </div>
-                        <div style="color: var(--shopify-gray-500); font-size: 0.9375rem; line-height: 1.7; margin-top: 0.5rem;">
-                            Most orders are processed and paid through Shopify
-                        </div>
-                        <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--shopify-blue);">
-                            <div style="font-weight: 700; color: var(--shopify-blue); font-size: 1rem;">
-                                Monthly Cost: Variable rate based on GMV
-                            </div>
-                            <div style="font-size: 0.875rem; color: var(--shopify-gray-500); margin-top: 0.5rem;">
-                                ⚡ When payment processing volume is high enough that VPF fees exceed €2,250/month, the merchant automatically switches to a variable rate pricing model
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="margin-top: 1.5rem; padding: 1rem 1.5rem; background: var(--shopify-gray-100); border-radius: 8px;">
+                    <div style="margin-top: 0; padding: 1rem 1.5rem; background: var(--shopify-gray-100); border-radius: 8px;">
                         <p style="font-size: 0.875rem; color: var(--shopify-gray-500); line-height: 1.6; margin: 0;">
                             <strong>💡 Key Point:</strong> The threshold is typically around €10-12M in annual GMV processed through Shopify. Lower-volume merchants or those with mostly offline payment terms pay the simple base fee. Higher-volume merchants benefit from the VPF model.
                         </p>
