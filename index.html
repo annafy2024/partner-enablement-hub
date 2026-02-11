@@ -1573,11 +1573,11 @@ Best,
 
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
                         <!-- Example 1: Lower Volume = Base Fee -->
-                        <div style="background: var(--shopify-green-light); border-left: 3px solid var(--shopify-green); border-radius: 8px; padding: 1.5rem;">
+                        <div style="background: var(--shopify-green-light); border-left: 3px solid var(--shopify-green); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column;">
                             <div style="font-weight: 700; font-size: 1rem; color: var(--shopify-black); margin-bottom: 0.75rem;">
                                 Merchant A: €5M Annual Revenue
                             </div>
-                            <div style="color: var(--shopify-gray-500); font-size: 0.9375rem; line-height: 1.7; margin-top: 0.5rem;">
+                            <div style="color: var(--shopify-gray-500); font-size: 0.9375rem; line-height: 1.7; margin-top: 0.5rem; min-height: 3em;">
                                 Mix of online and offline payments, some orders imported from external systems
                             </div>
                             <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--shopify-green);">
@@ -1591,11 +1591,11 @@ Best,
                         </div>
 
                         <!-- Example 2: Higher Volume = VPF -->
-                        <div style="background: var(--shopify-blue-light); border-left: 3px solid var(--shopify-blue); border-radius: 8px; padding: 1.5rem;">
+                        <div style="background: var(--shopify-blue-light); border-left: 3px solid var(--shopify-blue); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column;">
                             <div style="font-weight: 700; font-size: 1rem; color: var(--shopify-black); margin-bottom: 0.75rem;">
                                 Merchant B: €20M Annual Revenue
                             </div>
-                            <div style="color: var(--shopify-gray-500); font-size: 0.9375rem; line-height: 1.7; margin-top: 0.5rem;">
+                            <div style="color: var(--shopify-gray-500); font-size: 0.9375rem; line-height: 1.7; margin-top: 0.5rem; min-height: 3em;">
                                 High volume of orders processed and paid through Shopify
                             </div>
                             <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--shopify-blue);">
@@ -1627,7 +1627,7 @@ Best,
                     <span class="vpf-title">Variable Platform Fee (VPF) Logic</span>
                 </div>
                 <p class="vpf-description">
-                    In addition to the base subscription, VPF is charged when payment goes through Shopify's system or when Shopify facilitates the order. Understanding which orders trigger VPF helps partners set accurate expectations.
+                    Below is an explanation of which types of orders trigger VPF and which don't.
                 </p>
 
                 <div class="vpf-grid">
